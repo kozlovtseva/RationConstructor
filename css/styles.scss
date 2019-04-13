@@ -45,7 +45,7 @@ body{
 .main-container {
     background: url('../img/background.jpg');
     background-position: top;
-    height: 300px;   
+    height: 500px;   
 }
 label{
     font-size: 24px;
@@ -71,4 +71,28 @@ input{
     background-color: $background-green;
     font-size: 18px;
     @include zero-margin(20px, 0px);
+}
+
+.icon{
+    color: $background-yellow;
+}
+.icon:hover{
+    color: $background-canary;
+}
+
+//attach foooter to the bottom
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+.footer-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
